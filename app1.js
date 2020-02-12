@@ -1,5 +1,5 @@
-var prodDescr = document.getElementById("productDescription");
-descriptionP = prodDescr.children[0].children[0],
+var prodDescr = document.getElementById("productDescription"),
+    descriptionP = prodDescr.children[0].children[0],
     descriptionUl = prodDescr.children[0].children[1],
     descriptionContainer = document.createElement("div"),
     descriptionPParent = descriptionP.parentNode,
@@ -10,6 +10,9 @@ descriptionContainer.appendChild(descriptionUl);
 descriptionContainer.classList.add('description-tab');
 prodDescr.children[0].classList.add("description-container");
 
+/* создать цикл, пихающий все элементы в начале контейнера в div, остановиться, когда итерация дойдёт до table 
+var notATable = "table";
+*/
 
 var sizes = document.createElement("button");
 sizes.style.width = "100px";
